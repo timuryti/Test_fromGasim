@@ -1,0 +1,131 @@
+/* форматирование полей ввода */
+.form-row {
+    width: 20%; 
+    float: inline-start;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.logo{
+  background: url(./logo.svg);
+  padding: 0px;
+  margin: 0px;
+  width: 150px;
+  /* height: 50px; */
+}
+
+/* Шрифт */
+@font-face {
+  font-family: "Barlow";
+  src: local("Barlow"),
+    local("Barlow"),
+    url("Barlow.woff2") format("woff2"),
+    url("Barlow.woff") format("woff"),
+    url("Barlow.svg") format("svg");
+  font-weight: 500;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+
+
+h1{
+  font-size: 20px;
+  padding-top: 85px;
+  font-weight: 400;
+}
+
+h2{
+  padding-bottom: 50px;
+  font-weight: normal; 
+    font-size: medium;
+}
+
+/* Фоновая картинка */
+.leftPhoto {
+    float: left;
+    margin: 4px 10px 2px 0px;
+}
+/* форматирование легенды */
+legend { 
+    margin: 1em;
+    margin: -3px;
+    font-size: 20px;
+}
+/* форматирование для or */
+.with-line {
+    display:contents;
+  }
+  
+  .with-line:before,
+  .with-line:after {
+    content: "";
+    display: inline-block;
+    border-top: 1px solid #000;
+    width: 10em;
+    vertical-align: middle;
+    margin: 38px;
+  }
+
+  /* отступ строчек */
+
+.selector {
+    line-height: 3;
+  }
+/* кнопки */
+.icon_btn_facebook {
+  background: #255A9B;
+  background-image: url(/facebook.svg);
+}
+
+.icon_btn_linkedin {
+  background: #0076B6;
+  background-image: url(/linkedin.svg);
+  
+}
+
+  button.social-signin {
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: 6% 50%;
+    margin-bottom: 30px;
+    width: 230px;
+    height: 33px;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-weight: 0;
+    margin-right: 30px;
+    margin-left: 0px;
+    transition: 0.2s ease;
+    cursor: pointer;
+  }
+  
+  button.social-signin:hover,
+  button.social-signin:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+  
+  button.social-signin:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.2s ease;
+  }
+/* кнопка последняя  */
+.colorBtn {
+    border: 2px solid transparent;
+    background: #3799fb;
+    border-radius: 3px;
+    color: #FFF;
+    
+}
+/* Цвет ссылки */
+.element {
+  color:#3799fb ;
+}
+
+/* .icon-btn {
+  background: url('./facebook.svg') no-repeat center / contain; 
+} */
