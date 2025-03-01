@@ -5,77 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iintoo invest together</title>
 </head>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 <body>
-  <div >
+  <div>
+    <!-- фон -->
     <img     
-    src="./bg.jpg"
-    width="510"
-    align="left"
-    hspace="70"
-    vspace="10">
+      src="./bg.jpg"
+      width="510"
+      align="left"
+      hspace="70"
+      vspace="10">
   </div>
-   <div class="padding-left"> <!-- Заголовок -->
-  <h1>Get iintoo it today</h1>
-  <h2>There is no charge or obligation upon registration</h2>
+
+   <div class="padding-left"> 
+    <!-- Заголовок -->
+      <h1>Get iintoo it today</h1>
+      <!-- Подзаголовк -->
+        <h2>There is no charge or obligation upon registration</h2>
    </div>
   
 <!-- Кнопки регистраций -->
   <div>
   <button  class=" icon_btn_facebook social-signin facebook">Register with Facebook</button>
-  <button class=" icon_btn_linkedin social-signin linkedin"size="30" >Register with LinkedIn</button>
+  <button class=" icon_btn_linkedin social-signin linkedin">Register with LinkedIn</button>
   </div>
 
   <span class="with-line">or</span>
 
 <!-- Поля ввода эл.почты и номера телефона -->
-<div class='form-row selector'>
+  <div class='form-row selector'>
     		<input 
             type="email" 
             placeholder="Email"
             style=" 
-            height: 35px;
-            "
-            
+            height: 35px;"
             minlength="3"
             maxlength="100"
             size="34"
-            width="60"
-     >
-  		</div>
+            width="60">
+  </div>
 
-<div class='form-row selector'> 
+  <div class='form-row selector'> 
     		<input type="telephone" placeholder="Phone" style=" height: 35px;"
         minlength="3"
-            maxlength="50"
-            size="34"
-            width="100"
-        >
-		</div>
+        maxlength="50"
+        size="34"
+        width="100">
+	</div>
 
 <!-- тумблеры -->
-    <legend>What type of investor are you?</legend>
+  <legend>What type of investor are you?</legend>
     <p>Select the type of investor you are below:</p>
-        <div class="selector" class='form-row'>
-          <input type="radio" />
-          <label for="typeOfInvestor1">Individual</label>
-    
-          <input type="radio" />
-          <label for="typeOfInvestor2">Business</label>
-    
-          <input type="radio" />
-          <label for="typeOfInvestor3">Ira</label>
 
-          <input type="radio" />
-          <label for="typeOfInvestor4">Trust</label>
-        </div>
+    <div class="selector">
+        <input type="radio" id="typeOfInvestor1" name="radioButton" value="one"  >
+        <label class="radio-label" for="typeOfInvestor1">Individual <button class="round-button" title="I am natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common">i</button>
+          </label>
+    
+        <input type="radio" id="typeOfInvestor2"  name="radioButton" value="two">
+          <label class="radio-label" for="typeOfInvestor2">Business <button class="round-button" title="I am businessman">i</button>
+          </label>
+    
+        <input  type="radio" id="typeOfInvestor3"  name="radioButton" value="three" >
+          <label class="radio-label" for="typeOfInvestor3" >Ira <button class="round-button" title="An individual retirement account">i</button>
+          </label>
+
+        <input type="radio"  id="typeOfInvestor4"  name="radioButton" value="four" >
+          <label class="radio-label" for="typeOfInvestor4">Trust<button class="round-button" title="I am trust investore and founder">i</button>
+          </label>
+    </div>
         <!-- чекбокс -->
-        <input class="selector" type="checkbox"/>
-        <label class="selector" for="typeOfInvestor4">I agree to the terms and receiving notifications from iintoo <a href="https://ustav.livejournal.com/585820.html"  style="color: rgb(0, 128, 255);"> View full terms</a></label>
+        <input class="selector" type="checkbox" id="iAgree"/>
+        <label class="selector" for="iAgree">
+              I agree to the terms and receiving notifications from iintoo 
+                <a href="https://ustav.livejournal.com/585820.html"  
+                  style="color: rgb(0, 128, 255);"> View full terms</a>
+        </label>
+        <!-- кнопка отправки формы -->
         <div>
-          <button class="colorBtn icon-btn"  type="submit">Create Account</button>
+          <button class="colorBtn " type="submit">Create Account</button>
         </div>
-      </div>
 
 </body>
 </html>

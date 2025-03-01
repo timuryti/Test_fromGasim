@@ -1,44 +1,33 @@
-/* форматирование полей ввода */
-.form-row {
-    width: 20%; 
-    float: inline-start;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
-.logo{
-  background: url(./logo.svg);
-  padding: 0px;
-  margin: 0px;
-  width: 150px;
-  /* height: 50px; */
-}
-
 /* Шрифт */
 @font-face {
   font-family: "Barlow";
-  src: local("Barlow"),
-    local("Barlow"),
-    url("Barlow.woff2") format("woff2"),
-    url("Barlow.woff") format("woff"),
-    url("Barlow.svg") format("svg");
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/barlow/Barlow-Regular.otf') format('truetype');
 }
 
 body {
   font-family: "Barlow", sans-serif;
 }
 
-
-
+/* форматирование полей ввода */
+.form-row {
+    width: 20%; 
+    float: inline-start;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/* Заголовок */
 h1{
   font-size: 20px;
-  padding-top: 85px;
-  font-weight: 400;
+  padding-top: 80px;
+  font-weight: 00;
 }
-
+/* Подзаголовок */
 h2{
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   font-weight: normal; 
     font-size: medium;
 }
@@ -61,20 +50,20 @@ legend {
   
   .with-line:before,
   .with-line:after {
+    padding-top: 0px;
     content: "";
     display: inline-block;
     border-top: 1px solid #000;
-    width: 10em;
-    vertical-align: middle;
-    margin: 38px;
+    width: 12em;
+    vertical-align: text-bottom;
+    margin: 10px;
   }
 
   /* отступ строчек */
-
 .selector {
     line-height: 3;
   }
-/* кнопки */
+/* иконка на кнопки */
 .icon_btn_facebook {
   background: #255A9B;
   background-image: url(/facebook.svg);
@@ -83,9 +72,8 @@ legend {
 .icon_btn_linkedin {
   background: #0076B6;
   background-image: url(/linkedin.svg);
-  
 }
-
+/* динамика кнопок */
   button.social-signin {
     background-size: 8%;
     background-repeat: no-repeat;
@@ -102,19 +90,49 @@ legend {
     transition: 0.2s ease;
     cursor: pointer;
   }
-  
+  /* динамика кнопок */
   button.social-signin:hover,
   button.social-signin:focus {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     transition: 0.2s ease;
   }
-  
+  /* динамика кнопок */
   button.social-signin:active {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     transition: 0.2s ease;
   }
-/* кнопка последняя  */
+/* круглые-кнопки подсказки */
+  .round-button{
+    background: transparent;
+    color: white;
+    font-size: 10px;
+    align-items: center;
+    border: 0.5px solid #808080;
+    color: #808080;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    padding: 0!important;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .inputspace{
+    margin-left: 30px;
+  }
+
+
+
+  .radio-label {
+    padding-right: 30px;
+  }
+
+/* кнопка отправка формы  */
 .colorBtn {
+    margin-top: 40px;
+    width: 210px;
+    height: 33px;
+    
     border: 2px solid transparent;
     background: #3799fb;
     border-radius: 3px;
@@ -125,7 +143,3 @@ legend {
 .element {
   color:#3799fb ;
 }
-
-/* .icon-btn {
-  background: url('./facebook.svg') no-repeat center / contain; 
-} */
