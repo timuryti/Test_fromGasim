@@ -17,8 +17,9 @@ body {
     padding-left: 10px;
     padding-right: 20px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
+
 /* Заголовок */
 h1{
   font-size: 20px;
@@ -39,8 +40,7 @@ h2{
 }
 /* форматирование легенды */
 legend { 
-    margin: 1em;
-    margin: -3px;
+    text-align: center;
     font-size: 20px;
 }
 /* форматирование для or */
@@ -51,6 +51,7 @@ legend {
   .with-line:before,
   .with-line:after {
     padding-top: 0px;
+    padding-bottom: 0px;
     content: "";
     display: inline-block;
     border-top: 1px solid #000;
@@ -61,7 +62,7 @@ legend {
 
   /* отступ строчек */
 .selector {
-    line-height: 3;
+    line-height: 4;
   }
 /* иконка на кнопки */
 .icon_btn_facebook {
