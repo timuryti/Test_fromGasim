@@ -7,12 +7,11 @@
 </head>
     <link rel="stylesheet" href="style.css">
 <body>
-  <div style="position: relative;">
     <!-- фон -->
     <img     
       src="./bg.jpg"
       width="510"
-      alt=""
+      alt="logo"
       align="left"
       hspace="70"
       vspace="10">
@@ -21,13 +20,12 @@
         src="./logo.svg"
         alt=""
         style="position: absolute; top: 20px; left: 80px; width: 15%;"
-  </div>
 
    <div class="padding-left"> 
     <!-- Заголовок -->
-      <h1>Get iintoo it today</h1>
+      <h1 class="heading">Get iintoo it today</h1>
       <!-- Подзаголовк -->
-        <h2>There is no charge or obligation upon registration</h2>
+        <h2 class="subheading">There is no charge or obligation upon registration</h2>
    </div>
   
 <!-- Кнопки регистраций -->
@@ -47,8 +45,7 @@
             height: 35px;"
             minlength="3"
             maxlength="50"
-            size="34"
-            width="60">
+            size="34">
   </div>
 
   <div class='form-row selector'> 
@@ -59,12 +56,12 @@
             height: 35px;"
             minlength="3"
             maxlength="50"
-            size="34"
-            width="60">
+            size="34">
 	</div>
 
 <!-- тумблеры -->
-  <legend>What type of investor are you?</legend>
+ <div class="float_text">
+  <legend class="type_investors">What type of investor are you?</legend>
     <p>Select the type of investor you are below:</p>
 
     <div class="selector">
@@ -84,15 +81,18 @@
           <label class="radio-label" for="typeOfInvestor4">Trust<button class="round-button" title="I am trust investore and founder">i</button>
           </label>
     </div>
+</div>
         <!-- чекбокс -->
-        <input class="selector" type="checkbox" id="iAgree"/>
-        <label class="selector" for="iAgree">
+    <div class="selector float_text">
+        <input type="checkbox" id="iAgree"/>
+        <label  for="iAgree">
               I agree to the terms and receiving notifications from iintoo 
                 <a href="https://ustav.livejournal.com/585820.html"  
                   style="color: rgb(0, 128, 255);"> View full terms</a>
         </label>
+    </div>
         <!-- кнопка отправки формы -->
-        <div>
+        <div class="float_text">
           <button class="colorBtn " type="submit">Create Account</button>
         </div>
 

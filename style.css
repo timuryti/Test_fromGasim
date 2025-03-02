@@ -1,3 +1,4 @@
+
 /* Шрифт */
 @font-face {
   font-family: "Barlow";
@@ -9,6 +10,17 @@
 body {
   font-family: "Barlow", sans-serif;
 }
+/* цвета элементов */
+:root{
+  --or_line_color: #000;
+  --facebook_button_color: #255A9B;
+  --linkedin_button_color: #0076B6;
+  --buttons_font_color: #FFF;
+  --submit_button_color: #3799fb;
+  --gray_color: #808080;
+}
+
+
 
 /* форматирование полей ввода */
 .form-row {
@@ -17,17 +29,17 @@ body {
     padding-left: 10px;
     padding-right: 20px;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 /* Заголовок */
-h1{
+.heading{
   font-size: 20px;
   padding-top: 80px;
   font-weight: 00;
 }
 /* Подзаголовок */
-h2{
+.subheading{
   padding-bottom: 40px;
   font-weight: normal; 
     font-size: medium;
@@ -39,10 +51,16 @@ h2{
     margin: 4px 10px 2px 0px;
 }
 /* форматирование легенды */
-legend { 
-    text-align: center;
+.type_investors { 
     font-size: 20px;
 }
+/* обтекание картинки текстом */
+.float_text{
+  float: left;
+  /* word-wrap: keep-all; */
+  overflow-wrap: normal;
+}
+
 /* форматирование для or */
 .with-line {
     display:contents;
@@ -54,7 +72,7 @@ legend {
     padding-bottom: 0px;
     content: "";
     display: inline-block;
-    border-top: 1px solid #000;
+    border-top:1px solid var(--or_line_color);
     width: 12em;
     vertical-align: text-bottom;
     margin: 10px;
@@ -66,12 +84,12 @@ legend {
   }
 /* иконка на кнопки */
 .icon_btn_facebook {
-  background: #255A9B;
+  background: var(--facebook_button_color);
   background-image: url(/facebook.svg);
 }
 
 .icon_btn_linkedin {
-  background: #0076B6;
+  background: var(--linkedin_button_color);
   background-image: url(/linkedin.svg);
 }
 /* динамика кнопок */
@@ -84,45 +102,49 @@ legend {
     height: 33px;
     border: none;
     border-radius: 2px;
-    color: #FFF;
+    color: var(--buttons_font_color);
     font-weight: 0;
     margin-right: 30px;
     margin-left: 0px;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
     cursor: pointer;
   }
   /* динамика кнопок */
   button.social-signin:hover,
   button.social-signin:focus {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 2px 4px var(--gray_color);
+            box-shadow: 0 2px 4px var(--gray_color);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
   }
   /* динамика кнопок */
   button.social-signin:active {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 2px var(--gray_color);
+            box-shadow: 0 1px 2px var(--gray_color);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
   }
 /* круглые-кнопки подсказки */
   .round-button{
     background: transparent;
-    color: white;
+    color: var(--buttons_font_color);
     font-size: 10px;
-    align-items: center;
-    border: 0.5px solid #808080;
-    color: #808080;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.5px solid var(--gray_color);
+    color: var(--gray_color);
     width: 14px;
     height: 14px;
     border-radius: 7px;
-    padding: 0!important;
+    padding: 0;
     margin: 0;
     line-height: 1;
   }
-
-  .inputspace{
-    margin-left: 30px;
-  }
-
-
 
   .radio-label {
     padding-right: 30px;
@@ -133,14 +155,12 @@ legend {
     margin-top: 40px;
     width: 210px;
     height: 33px;
-    
     border: 2px solid transparent;
-    background: #3799fb;
+    background: var(--submit_button_color);
     border-radius: 3px;
-    color: #FFF;
-    
+    color: var(--buttons_font_color);  
 }
 /* Цвет ссылки */
 .element {
-  color:#3799fb ;
+  color: var(--submit_button_color) ;
 }
